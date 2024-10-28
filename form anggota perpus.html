@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(leveling.jpg);
+        background-size: cover;
+        opacity: 0.7;
+      }
+
+      .main {
+        background-color: blue;
+        border: 2px dashed white;
+        border-radius: 20px;
+        width: 150vh;
+        display: flex;
+        margin: auto;
+        margin-top: 4rem;
+      }
+
+      .second {
+        margin: 20px;
+      }
+
+      .second h2 {
+        text-align: center;
+        border-bottom: 2px dashed white;
+        color: white;
+      }
+
+      .second label {
+        color: white;
+      }
+
+      .third {
+        display: flex;
+        justify-content: center;
+      }
+
+      .third button {
+        width: 100px;
+        height: 25px;
+        margin: 10px;
+      }
+
+      .imput {
+        width: 143vh;
+      }
+      
+      @media (max-width: 500px) {
+      .main {
+        width: 50vh;
+      }
+      .imput {
+        width: 45vh;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="main">
+        <div class="second">
+          <h2>Formulir anggota perpustakaan</h2>
+
+          <label>Nama</label><br />
+          <input
+            class="imput"
+            type="text"
+            name="nama"
+            placeholder="Masukan nama anda"
+          />
+
+          <br /><br />
+          <label>Kota kelahiran</label><br />
+          <input
+            class="imput"
+            type="text"
+            name="Kota_Lahir"
+            placeholder="Masukan kota lahir anda"
+          />
+
+          <br /><br />
+          <label>Tanggal Lahir</label><br />
+          <input
+            class="imput"
+            type="date"
+            name="tanggal_Lahir"
+            placeholder="Masukan tanggal lahir anda"
+          />
+
+          <br /><br />
+          <label>Gender</label><br />
+          <input type="radio" name="Kelamin" /><label>Pria</label>
+          <input type="radio" name="Kelamin" /><label>Wanita</label>
+
+          <br /><br />
+          <label>No. Telepon</label><br />
+          <input
+            class="imput"
+            type="number"
+            name="no_telepon"
+            placeholder="Masukan Nomor Telepon anda"
+            max="10"
+          />
+
+          <br /><br />
+          <label>Makanan Favorit</label><br />
+          <input type="checkbox" name="mafa" /><label>Nasi Goreng</label>
+          <input type="checkbox" name="mafa" /><label>Mie Goreng</label>
+
+          <br /><br />
+          <label>Agama</label><br />
+          <select name="Agama" class="imput">
+            <option value="Islam">islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katholik">Katholik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+
+          <br /><br />
+          <label>Alamat</label> <br />
+          <textarea name="Alamat" class="imput"></textarea>
+          <div class="third">
+            <button>Clear</button>
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
